@@ -1,8 +1,20 @@
 # Netflix gpt
+
 - create react app through vite
 - configured tailwindcss in our app
 - Header
+- Routing of app
 - Login Form
+- Sign up form
+- Form validation
+- useRef hook
+- Firebase setup
+- Deploying app to firebase
+- Create sign up user account
+- Implement sign in user api
+- Created Redux store  with userSlice
+- Implemented sign out 
+- Update Profile api 
     
 
 # Feature
@@ -16,7 +28,7 @@
         - Trailer in background
         - Title & Description
         - Movie suggestions
-            - MoviesList * N 
+        - MoviesList * N 
 
 - Netflix GPT
     - Search bar
