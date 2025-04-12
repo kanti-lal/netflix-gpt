@@ -1,7 +1,9 @@
 # Netflix gpt
 - create react app through vite
 - configured tailwindcss in our app
-  
+- Header
+- Login Form
+    
 
 # Feature
 - Login/Sign Up
