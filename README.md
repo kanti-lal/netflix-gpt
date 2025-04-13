@@ -37,6 +37,9 @@
 - usePopularMovies custom cook
 - useTrendingMovies custom cook
 - useUpcomingMovies custom cook
+- GPT Search page
+- GPT Search bar
+- (FEATURE) Multi-language feature in our app
 
 # Feature
 - Login/Sign Up
