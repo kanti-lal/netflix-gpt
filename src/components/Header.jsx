@@ -5,13 +5,14 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addUser, removeUser } from "../utils/userSlice";
 import { LOGO, SUPPORTED_LANGUAGE, USER_AVATAR } from "../utils/constants";
-import { toggleGptSearchView } from "../utils/gptSlice";
+import { clearGptMovieResult, toggleGptSearchView } from "../utils/gptSlice";
 import { changeLanguage } from "../utils/configSlice";
 
 const Header = () => {
   const navigate = useNavigate();
   const user = useSelector((store) => store.user);
   const showGptSearch = useSelector((store) => store.gpt.showGptSearch);
+  const langKey = useSelector((store) => store.config.lang);
 
   const dispatch = useDispatch();
 
@@ -46,6 +47,7 @@ const Header = () => {
 
   const handleGptSearchClick = () => {
     dispatch(toggleGptSearchView());
+    dispatch(clearGptMovieResult());
   };
 
   const handleLanguageSelect = (e) => {
@@ -60,6 +62,7 @@ const Header = () => {
             <select
               className="px-2 bg-gray-900 text-white rounded h-10 border border-gray-500"
               onClick={handleLanguageSelect}
+              defaultValue={langKey}
             >
               {SUPPORTED_LANGUAGE.map((lang) => (
                 <option key={lang.identifier} value={lang.identifier}>
