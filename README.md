@@ -40,7 +40,6 @@
 - GPT Search page
 - GPT Search bar
 - (BONUS) Multi-language feature in our app
-- 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
 
 # Feature
 - Login/Sign Up
