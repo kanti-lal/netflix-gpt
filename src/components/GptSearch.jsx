@@ -5,17 +5,19 @@ import { HERO_HEADER } from "../utils/constants";
 
 const GptSearch = () => {
   return (
-    <div>
-      <div className="absolute -z-10">
+    <>
+      <div className="fixed -z-10">
         <img
           src={HERO_HEADER}
           alt="main"
-          className="w-full h-full object-cover"
+          className="h-screen md:h-full object-cover"
         />
       </div>
-      <GptSearchBar />
-      <GptMovieSuggestion />
-    </div>
+      <div className="md:p-0">
+        <GptSearchBar />
+        <GptMovieSuggestion />
+      </div>
+    </>
   );
 };
 

@@ -89,12 +89,12 @@ const Login = () => {
         <img
           src={HERO_HEADER}
           alt="main"
-          className="w-full h-full object-cover opacity-50"
+          className="md:w-full h-screen md:h-full object-cover opacity-50"
         />
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="absolute p-12 bg-black/85 w-3/12 mx-auto my-36 right-0 left-0 rounded-md"
+        className="absolute p-12 bg-black/85 w-full md:w-3/12 mx-auto my-36 right-0 left-0 rounded-md"
       >
         <h1 className="text-3xl text-white mb-3 font-semibold text-left">
           {isSignInForm ? "Sign In" : "Sign Up"}
